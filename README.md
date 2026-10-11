@@ -1,6 +1,6 @@
 # tema-integrador
 
-# 🐾 Sistema Web para Pet Shop local (Patas & Cia)
+# Sistema Web para Pet Shop local (Baby Pet)
 
 Este projeto foi desenvolvido como parte da atividade extensionista do **1º período** do curso de Análise e Desenvolvimento de Sistemas (ADS) da **Universidade Iguaçu (UNIG)**. 
 
