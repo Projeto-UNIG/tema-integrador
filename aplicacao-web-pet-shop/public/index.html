@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pet Shop Patas & Cia — banho, tosa e estética animal com carinho para os pets do bairro. Agende online.">
+  <meta name="theme-color" content="#f5f5f4">
+  <title>Patas &amp; Cia — Banho e Tosa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Cabeçalho / Navbar ===== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="#inicio" class="logo" aria-label="Patas & Cia — Início">
+        <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/>
+          <path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/>
+        </svg>
+        <span>Patas &amp; Cia</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio" class="nav-link active">Início</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#servicos" class="nav-link">Serviços</a></li>
+        <li><a href="#galeria" class="nav-link">Galeria</a></li>
+        <li><a href="#agendamento" class="nav-link">Agendamento</a></li>
+        <li><a href="#cadastro" class="nav-link">Cadastro</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">Estética animal no seu bairro</span>
+          <h1>Banho e tosa feitos com calma, carinho e atenção.</h1>
+          <p class="lead">Cuidamos do seu pet como se fosse da família. Produtos suaves, ambiente tranquilo e profissionais que respeitam o tempo de cada animal.</p>
+          <div class="hero-actions">
+            <a href="#agendamento" class="btn btn-primary">Agendar horário</a>
+            <a href="#servicos" class="btn btn-ghost">Ver serviços</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>12+</strong><span>anos de cuidado</span></li>
+            <li><strong>3.000+</strong><span>pets atendidos</span></li>
+            <li><strong>4,9</strong><span>nota média</span></li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <img src="images/hero.png" alt="Cachorro feliz enrolado em uma toalha branca após o banho" width="600" height="600">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Sobre ===== -->
+    <section class="section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-media">
+          <img src="images/about.png" alt="Profissional escovando com delicadeza um cachorro pequeno branco" width="600" height="600" loading="lazy">
+        </div>
+        <div class="about-content">
+          <span class="eyebrow">Nossa história</span>
+          <h2>Começamos com um balde, uma escova e muito amor pelos bichos.</h2>
+          <p>A Patas &amp; Cia nasceu em 2014, na garagem da Dona Helena, que dava banho nos cachorros da vizinhança aos fins de semana. A fama de &ldquo;mão leve&rdquo; correu pela rua e, aos poucos, o hobby virou o pet shop que conhecemos hoje.</p>
+          <p>Continuamos pequenos de propósito: atendemos poucos pets por vez para que cada um receba atenção de verdade. Conhecemos os nossos clientes pelo nome &mdash; e os pets também.</p>
+          <ul class="check-list">
+            <li>Produtos hipoalergênicos e dermatologicamente testados</li>
+            <li>Secagem sem barulho excessivo, ideal para pets ansiosos</li>
+            <li>Ambiente higienizado entre cada atendimento</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Serviços ===== -->
+    <section class="section section-alt" id="servicos">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Serviços</span>
+          <h2>Tudo o que seu pet precisa para ficar limpinho</h2>
+          <p>Valores de referência para pets de porte pequeno. Consulte para outros portes.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg>
+            </div>
+            <h3>Banho completo</h3>
+            <p>Shampoo e condicionador suaves, limpeza de ouvidos, secagem e escovação.</p>
+            <span class="price">a partir de R$ 55</span>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+            </div>
+            <h3>Tosa higiênica</h3>
+            <p>Aparo nas regiões íntimas, patas e rosto para mais conforto e higiene.</p>
+            <span class="price">a partir de R$ 40</span>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+            </div>
+            <h3>Hidratação</h3>
+            <p>Máscara nutritiva que devolve brilho, maciez e reduz o embaraçamento dos pelos.</p>
+            <span class="price">a partir de R$ 35</span>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M8 7h8"/><path d="M6 12h12"/><path d="M8 17h8"/></svg>
+            </div>
+            <h3>Corte de unhas</h3>
+            <p>Corte cuidadoso com lixamento, evitando machucados e desconfortos ao caminhar.</p>
+            <span class="price">a partir de R$ 20</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Galeria ===== -->
+    <section class="section" id="galeria">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Galeria</span>
+          <h2>Um pouco do nosso dia a dia</h2>
+          <p>Fotos e vídeos reais de quem passa por aqui.</p>
+        </div>
+
+        <div class="gallery-tabs" role="tablist" aria-label="Filtrar galeria">
+          <button class="tab active" role="tab" aria-selected="true" data-filter="todos">Todos</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="foto">Fotos</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="video">Vídeos</button>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-large" data-type="foto">
+            <img src="images/gallery-1.png" alt="Cachorro coberto de espuma durante o banho" loading="lazy">
+            <figcaption>Banho relaxante</figcaption>
+          </figure>
+          <figure class="gallery-item" data-type="foto">
+            <img src="images/gallery-2.png" alt="Profissional tosando um poodle com tesoura" loading="lazy">
+            <figcaption>Tosa na tesoura</figcaption>
+          </figure>
+          <figure class="gallery-item" data-type="foto">
+            <img src="images/gallery-3.png" alt="Gato cinza sendo escovado sobre uma toalha branca" loading="lazy">
+            <figcaption>Escovação de felinos</figcaption>
+          </figure>
+          <figure class="gallery-item" data-type="video">
+            <!-- Substitua o arquivo em videos/banho.mp4 pelo seu vídeo -->
+            <video controls preload="none" poster="images/gallery-1.png">
+              <source src="videos/banho.mp4" type="video/mp4">
+              Seu navegador não suporta vídeos.
+            </video>
+            <figcaption>Vídeo: rotina do banho</figcaption>
+          </figure>
+          <figure class="gallery-item" data-type="foto">
+            <img src="images/gallery-4.png" alt="Shih tzu recém tosado com lacinho cinza" loading="lazy">
+            <figcaption>Pronto para passear</figcaption>
+          </figure>
+          <figure class="gallery-item" data-type="video">
+            <!-- Substitua o arquivo em videos/tosa.mp4 pelo seu vídeo -->
+            <video controls preload="none" poster="images/gallery-2.png">
+              <source src="videos/tosa.mp4" type="video/mp4">
+              Seu navegador não suporta vídeos.
+            </video>
+            <figcaption>Vídeo: tosa passo a passo</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Depoimentos ===== -->
+    <section class="section section-alt" id="depoimentos">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Depoimentos</span>
+          <h2>O que dizem os tutores</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>&ldquo;O Thor morria de medo de secador. Aqui ele sai tranquilo e cheiroso. A equipe tem uma paciência enorme!&rdquo;</blockquote>
+            <div class="author">
+              <span class="avatar" aria-hidden="true">MC</span>
+              <div><strong>Mariana Costa</strong><span>Tutora do Thor, Golden</span></div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>&ldquo;Atendimento super humano. Lembram que a Mel tem alergia e sempre usam o shampoo certo, sem eu precisar repetir.&rdquo;</blockquote>
+            <div class="author">
+              <span class="avatar" aria-hidden="true">RS</span>
+              <div><strong>Ricardo Souza</strong><span>Tutor da Mel, Shih Tzu</span></div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>&ldquo;Raro achar lugar que cuida bem de gatos. A Luna volta calma e com o pelo lindo. Recomendo de olhos fechados.&rdquo;</blockquote>
+            <div class="author">
+              <span class="avatar" aria-hidden="true">AL</span>
+              <div><strong>Ana Lima</strong><span>Tutora da Luna, SRD</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Agendamento ===== -->
+    <section class="section" id="agendamento">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Agendamento</span>
+          <h2>Agende o banho e tosa do seu pet</h2>
+          <p>Selecione um pet já cadastrado. Ainda não cadastrou? <a href="#cadastro" class="link">Faça o cadastro aqui</a>.</p>
+        </div>
+
+        <div class="schedule-grid">
+          <form class="card form" id="scheduleForm" novalidate>
+            <h3 class="card-title">Novo agendamento</h3>
+
+            <div class="field">
+              <label for="schedulePet">Pet</label>
+              <select id="schedulePet" name="pet" required>
+                <option value="">Nenhum pet cadastrado</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="scheduleService">Serviço</label>
+              <select id="scheduleService" name="service" required>
+                <option value="">Selecione o serviço</option>
+                <option value="Banho completo">Banho completo</option>
+                <option value="Banho e tosa higiênica">Banho e tosa higiênica</option>
+                <option value="Banho e tosa completa">Banho e tosa completa</option>
+                <option value="Hidratação">Hidratação</option>
+                <option value="Corte de unhas">Corte de unhas</option>
+              </select>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="scheduleDate">Data</label>
+                <input type="date" id="scheduleDate" name="date" required>
+              </div>
+              <div class="field">
+                <label for="scheduleTime">Horário</label>
+                <select id="scheduleTime" name="time" required>
+                  <option value="">Selecione</option>
+                </select>
+              </div>
+            </div>
+
+            <p class="form-error" id="scheduleError" role="alert"></p>
+            <button type="submit" class="btn btn-primary btn-block">Confirmar agendamento</button>
+          </form>
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Agendamentos</h3>
+              <label class="sr-only" for="statusFilter">Filtrar por status</label>
+              <select id="statusFilter" class="select-sm">
+                <option value="todos">Todos os status</option>
+                <option value="Agendado">Agendado</option>
+                <option value="Em atendimento">Em atendimento</option>
+                <option value="Concluído">Concluído</option>
+                <option value="Cancelado">Cancelado</option>
+              </select>
+            </div>
+
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Pet</th>
+                    <th scope="col">Serviço</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Status</th>
+                    <th scope="col"><span class="sr-only">Ações</span></th>
+                  </tr>
+                </thead>
+                <tbody id="scheduleTable"></tbody>
+              </table>
+              <p class="empty" id="scheduleEmpty">Nenhum agendamento encontrado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Cadastro ===== -->
+    <section class="section section-alt" id="cadastro">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Cadastro</span>
+          <h2>Cadastre você e seu pet</h2>
+          <p>Essas informações nos ajudam a cuidar melhor do seu companheiro.</p>
+        </div>
+
+        <div class="register-grid">
+          <form class="card form" id="registerForm" novalidate>
+            <fieldset>
+              <legend>Dados do tutor</legend>
+              <div class="field">
+                <label for="tutorName">Nome completo</label>
+                <input type="text" id="tutorName" name="tutorName" placeholder="Ex.: Maria Silva" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="tutorPhone">Telefone</label>
+                <input type="tel" id="tutorPhone" name="tutorPhone" placeholder="(11) 99999-9999" autocomplete="tel" inputmode="numeric" maxlength="15" required>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Dados do pet</legend>
+              <div class="field">
+                <label for="petName">Nome do pet</label>
+                <input type="text" id="petName" name="petName" placeholder="Ex.: Thor" required>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="petSpecies">Espécie</label>
+                  <select id="petSpecies" name="petSpecies" required>
+                    <option value="">Selecione</option>
+                    <option value="Cachorro">Cachorro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Outro">Outro</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="petBreed">Raça</label>
+                  <input type="text" id="petBreed" name="petBreed" placeholder="Ex.: Golden Retriever">
+                </div>
+              </div>
+              <div class="field">
+                <label for="petNotes">Observações importantes</label>
+                <textarea id="petNotes" name="petNotes" rows="3" placeholder="Comportamento, alergias, medos, sensibilidades..."></textarea>
+              </div>
+            </fieldset>
+
+            <p class="form-error" id="registerError" role="alert"></p>
+            <button type="submit" class="btn btn-primary btn-block">Salvar cadastro</button>
+          </form>
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Pets cadastrados</h3>
+              <span class="badge" id="petCount">0</span>
+            </div>
+            <ul class="pet-list" id="petList"></ul>
+            <p class="empty" id="petEmpty">Nenhum pet cadastrado ainda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="footer" id="contato">
+    <div class="container footer-grid">
+      <div>
+        <a href="#inicio" class="logo logo-footer">
+          <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/>
+            <path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/>
+          </svg>
+          <span>Patas &amp; Cia</span>
+        </a>
+        <p class="footer-text">Banho, tosa e estética animal com carinho desde 2014.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <ul class="footer-list">
+          <li><a href="tel:+551134567890">(11) 3456-7890</a></li>
+          <li><a href="https://wa.me/5511987654321">(11) 98765-4321 (WhatsApp)</a></li>
+          <li><a href="mailto:contato@patasecia.com.br">contato@patasecia.com.br</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Endereço</h4>
+        <address class="footer-list">
+          Rua das Acácias, 245<br>
+          Vila Esperança &mdash; São Paulo, SP<br>
+          CEP 03650-000
+        </address>
+      </div>
+
+      <div>
+        <h4>Horário de funcionamento</h4>
+        <ul class="footer-list">
+          <li>Seg a Sex: 8h às 18h</li>
+          <li>Sábado: 8h às 14h</li>
+          <li>Domingo: fechado</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> Patas &amp; Cia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
