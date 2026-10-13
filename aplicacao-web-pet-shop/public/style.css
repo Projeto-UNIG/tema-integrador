@@ -1,43 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Poppins:wght@400;500;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/waltograph');
 
-   :root {
-    /* Cores base */
-  --color-bg: #fafaf9;
-  --color-surface: #ffffff;
-  --color-surface-alt: #f2f2f0;
-  --color-border: #e4e4e1;
+:root {
+  /* Cores base (Tema Escuro: Preto e Cinza Profundo) */
+  --color-bg: #0c0c0e;
+  --color-surface: #141416;
+  --color-surface-alt: #1e1e22;
+  --color-border: #2a2a30;
 
   /* Texto */
-  --color-text: #1c1c1a;
-  --color-text-muted: #6b6b66;
+  --color-text: #f4f4f5;
+  --color-text-muted: #a1a1aa;
 
-  /* Destaque (detalhe sutil) */
-  --color-primary: #2b2b29;
-  --color-primary-hover: #000000;
+  /* Destaques (Rosa Choque e Azul Elétrico) */
+  --color-primary: #ff2a85;       /* Rosa Choque */
+  --color-primary-hover: #ff006e; 
   --color-primary-text: #ffffff;
-  --color-accent: #a8a29e;
+  --color-accent: #00d2ff;        /* Azul Elétrico */
+  --color-accent-hover: #00a8cc;
 
   /* Status */
-  --color-status-scheduled: #e7e5e4;
-  --color-status-progress: #fef3c7;
-  --color-status-done: #dcfce7;
-  --color-status-canceled: #fee2e2;
-  --color-danger: #b91c1c;
+  --color-status-scheduled: #27272a;
+  --color-status-progress: #422006;
+  --color-status-done: #052e16;
+  --color-status-canceled: #450a0a;
+  --color-danger: #ef4444;
   
-    /* Tipografia */
-    --font-sans: "Poppins", system-ui, sans-serif;
-    --font-heading: "Waltograph", cursive, sans-serif;
+  /* Tipografia */
+  --font-sans: "Poppins", system-ui, sans-serif;
+  --font-heading: "Waltograph", cursive, sans-serif;
   
-    /* Forma e espaçamento */
-    --radius-sm: 8px;
-    --radius: 14px;
-    --radius-lg: 24px;
-    --shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    --container: 1160px;
-    --header-height: 72px;
-    --transition: 0.2s ease;
-  }
+  /* Forma e espaçamento */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 24px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  --container: 1160px;
+  --header-height: 72px;
+  --transition: 0.2s ease;
+}
 
 /* =========================================================
    RESET E BASE
@@ -106,7 +107,7 @@ h2 { font-size: clamp(1.75rem, 3.5vw, 2.5rem); }
 h3 { font-size: 1.25rem; }
 
 :focus-visible {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--color-accent);
   outline-offset: 2px;
 }
 
@@ -135,14 +136,14 @@ h3 { font-size: 1.25rem; }
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-text-muted);
+  color: var(--color-accent);
   margin-bottom: 0.75rem;
 }
 
 .link {
   text-decoration: underline;
   text-underline-offset: 3px;
-  color: var(--color-text);
+  color: var(--color-accent);
 }
 
 /* =========================================================
@@ -173,9 +174,13 @@ h3 { font-size: 1.25rem; }
 .btn-ghost {
   border-color: var(--color-border);
   background: var(--color-surface);
+  color: var(--color-text);
 }
 
-.btn-ghost:hover { border-color: var(--color-text-muted); }
+.btn-ghost:hover { 
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
 
 .btn-block { width: 100%; }
 
@@ -208,6 +213,7 @@ h3 { font-size: 1.25rem; }
   font-family: var(--font-heading);
   font-size: 2rem;
   font-weight: 600;
+  color: var(--color-primary);
 }
 
 .logo-icon {
@@ -215,7 +221,7 @@ h3 { font-size: 1.25rem; }
   height: 28px;
   margin-bottom: 8px;
   fill: none;
-  stroke: currentColor;
+  stroke: var(--color-accent);
   stroke-width: 1.75;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -237,7 +243,7 @@ h3 { font-size: 1.25rem; }
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--color-text);
+  color: var(--color-accent);
   background: var(--color-surface-alt);
 }
 
@@ -302,6 +308,7 @@ h3 { font-size: 1.25rem; }
   font-family: var(--font-serif);
   font-size: 1.75rem;
   font-weight: 500;
+  color: var(--color-accent);
 }
 
 .hero-stats span {
@@ -315,6 +322,7 @@ h3 { font-size: 1.25rem; }
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
 }
 
 /* =========================================================
@@ -381,8 +389,8 @@ h3 { font-size: 1.25rem; }
   top: 0.45em;
   width: 1rem;
   height: 0.55rem;
-  border-left: 2px solid var(--color-primary);
-  border-bottom: 2px solid var(--color-primary);
+  border-left: 2px solid var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
   transform: rotate(-45deg);
 }
 
@@ -401,12 +409,13 @@ h3 { font-size: 1.25rem; }
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
 .service-card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow);
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 20px rgba(0, 210, 255, 0.1);
 }
 
 .service-card p {
@@ -429,7 +438,7 @@ h3 { font-size: 1.25rem; }
   width: 24px;
   height: 24px;
   fill: none;
-  stroke: var(--color-text);
+  stroke: var(--color-accent);
   stroke-width: 1.75;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -440,6 +449,7 @@ h3 { font-size: 1.25rem; }
   font-size: 0.9375rem;
   padding-top: 0.75rem;
   border-top: 1px solid var(--color-border);
+  color: var(--color-primary);
 }
 
 /* Galeria */
@@ -455,9 +465,15 @@ h3 { font-size: 1.25rem; }
   border-radius: 999px;
   border: 1px solid var(--color-border);
   background: var(--color-surface);
+  color: var(--color-text-muted);
   cursor: pointer;
   font-size: 0.9375rem;
-  transition: background var(--transition), color var(--transition);
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.tab:hover {
+  color: var(--color-text);
+  border-color: var(--color-text-muted);
 }
 
 .tab.active {
@@ -478,6 +494,7 @@ h3 { font-size: 1.25rem; }
   overflow: hidden;
   border-radius: var(--radius);
   background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
 }
 
 .gallery-item.hidden { display: none; }
@@ -503,6 +520,7 @@ h3 { font-size: 1.25rem; }
   font-size: 0.8125rem;
   font-weight: 500;
   background: color-mix(in srgb, var(--color-surface) 90%, transparent);
+  color: var(--color-text);
   pointer-events: none;
 }
 
@@ -524,7 +542,7 @@ h3 { font-size: 1.25rem; }
 }
 
 .stars {
-  color: var(--color-text);
+  color: var(--color-accent);
   letter-spacing: 0.15em;
 }
 
@@ -554,11 +572,13 @@ h3 { font-size: 1.25rem; }
   height: 42px;
   border-radius: 50%;
   background: var(--color-surface-alt);
+  color: var(--color-accent);
   display: grid;
   place-items: center;
   font-size: 0.8125rem;
   font-weight: 600;
   flex-shrink: 0;
+  border: 1px solid var(--color-border);
 }
 
 /* =========================================================
@@ -611,6 +631,7 @@ h3 { font-size: 1.25rem; }
   font-family: var(--font-serif);
   font-size: 1.125rem;
   margin-bottom: 1rem;
+  color: var(--color-accent);
 }
 
 .field {
@@ -630,6 +651,7 @@ h3 { font-size: 1.25rem; }
 .field label {
   font-size: 0.875rem;
   font-weight: 500;
+  color: var(--color-text);
 }
 
 .field input,
@@ -641,6 +663,7 @@ h3 { font-size: 1.25rem; }
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   background: var(--color-bg);
+  color: var(--color-text);
   transition: border-color var(--transition), background var(--transition);
 }
 
@@ -650,7 +673,7 @@ h3 { font-size: 1.25rem; }
 .field select:focus,
 .field textarea:focus {
   outline: none;
-  border-color: var(--color-primary);
+  border-color: var(--color-accent);
   background: var(--color-surface);
 }
 
@@ -660,6 +683,9 @@ h3 { font-size: 1.25rem; }
   width: auto;
   padding: 0.45rem 0.75rem;
   font-size: 0.875rem;
+  background: var(--color-surface);
+  color: var(--color-text);
+  border-color: var(--color-border);
 }
 
 .form-error {
@@ -674,9 +700,11 @@ h3 { font-size: 1.25rem; }
   padding: 0.15rem 0.6rem;
   border-radius: 999px;
   background: var(--color-surface-alt);
+  color: var(--color-accent);
   font-size: 0.8125rem;
   font-weight: 600;
   text-align: center;
+  border: 1px solid var(--color-border);
 }
 
 .empty {
@@ -703,11 +731,13 @@ h3 { font-size: 1.25rem; }
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  background: var(--color-surface-alt);
 }
 
 .pet-item h4 {
   font-size: 1rem;
   font-weight: 600;
+  color: var(--color-text);
 }
 
 .pet-meta,
@@ -720,8 +750,9 @@ h3 { font-size: 1.25rem; }
   margin-top: 0.5rem;
   font-size: 0.8125rem;
   padding: 0.4rem 0.6rem;
-  background: var(--color-surface-alt);
+  background: var(--color-bg);
   border-radius: 6px;
+  color: var(--color-text-muted);
 }
 
 .icon-btn {
@@ -768,7 +799,7 @@ h3 { font-size: 1.25rem; }
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--color-text-muted);
+  color: var(--color-accent);
   padding: 0.6rem 0.75rem;
   border-bottom: 1px solid var(--color-border);
 }
@@ -777,6 +808,7 @@ h3 { font-size: 1.25rem; }
   padding: 0.85rem 0.75rem;
   border-bottom: 1px solid var(--color-border);
   vertical-align: middle;
+  color: var(--color-text);
 }
 
 .table tr:last-child td { border-bottom: 0; }
@@ -790,24 +822,27 @@ h3 { font-size: 1.25rem; }
 .status-select {
   padding: 0.35rem 0.6rem;
   border-radius: 999px;
-  border: 0;
+  border: 1px solid var(--color-border);
   font-size: 0.8125rem;
   font-weight: 500;
   cursor: pointer;
+  background: var(--color-surface-alt);
+  color: var(--color-text);
 }
 
-.status-Agendado { background: var(--color-status-scheduled); }
-.status-Em-atendimento { background: var(--color-status-progress); }
-.status-Concluído { background: var(--color-status-done); }
-.status-Cancelado { background: var(--color-status-canceled); }
+.status-Agendado { background: var(--color-status-scheduled); color: var(--color-text); }
+.status-Em-atendimento { background: var(--color-status-progress); color: #fde047; }
+.status-Concluído { background: var(--color-status-done); color: #4ade80; }
+.status-Cancelado { background: var(--color-status-canceled); color: #f87171; }
 
 /* =========================================================
    FOOTER
    ========================================================= */
 .footer {
-  background: var(--color-primary);
-  color: color-mix(in srgb, var(--color-primary-text) 75%, transparent);
+  background: #08080a;
+  color: var(--color-text-muted);
   padding: 4rem 0 0;
+  border-top: 1px solid var(--color-border);
 }
 
 .footer-grid {
@@ -817,17 +852,20 @@ h3 { font-size: 1.25rem; }
 }
 
 .logo-footer { 
-  color: var(--color-primary-text);
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-primary);
 }
 
 .footer-text {
   margin: 1rem 0 1.5rem;
   font-size: 0.9375rem;
   max-width: 18rem;
+  color: var(--color-text-muted);
 }
 
 .footer h4 {
-  color: var(--color-primary-text);
+  color: var(--color-accent);
   font-size: 0.9375rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -841,7 +879,7 @@ h3 { font-size: 1.25rem; }
   line-height: 1.8;
 }
 
-.footer-list a:hover { color: var(--color-primary-text); }
+.footer-list a:hover { color: var(--color-accent); }
 
 .socials {
   display: flex;
@@ -852,15 +890,18 @@ h3 { font-size: 1.25rem; }
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--color-primary-text) 25%, transparent);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
   display: grid;
   place-items: center;
-  transition: background var(--transition), color var(--transition);
+  color: var(--color-accent);
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
 }
 
 .socials a:hover {
-  background: var(--color-primary-text);
-  color: var(--color-primary);
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border-color: var(--color-accent);
 }
 
 .socials svg {
@@ -876,8 +917,9 @@ h3 { font-size: 1.25rem; }
 .footer-bottom {
   margin-top: 3rem;
   padding-block: 1.5rem;
-  border-top: 1px solid color-mix(in srgb, var(--color-primary-text) 15%, transparent);
+  border-top: 1px solid var(--color-border);
   font-size: 0.8125rem;
+  color: var(--color-text-muted);
 }
 
 /* =========================================================
@@ -922,7 +964,7 @@ h3 { font-size: 1.25rem; }
     right: 0;
     flex-direction: column;
     padding: 1rem 1.25rem 1.5rem;
-    background: var(--color-bg);
+    background: var(--color-surface);
     border-bottom: 1px solid var(--color-border);
     transform: translateY(-8px);
     opacity: 0;
@@ -987,6 +1029,7 @@ h3 { font-size: 1.25rem; }
     padding: 0.75rem;
     margin-bottom: 0.75rem;
     position: relative;
+    background: var(--color-surface);
   }
   .table td {
     border: 0;
