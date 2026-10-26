@@ -396,10 +396,10 @@ h3 { font-size: 1.25rem; }
 
 /* Serviços */
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 1.25rem;
 }
 
 .service-card {
@@ -411,6 +411,9 @@ h3 { font-size: 1.25rem; }
   flex-direction: column;
   gap: 0.75rem;
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  /* Define uma largura base para os cards manterem o tamanho ideal e se encaixarem lado a lado */
+  flex: 1 1 260px;
+  max-width: 300px;
 }
 
 .service-card:hover {
