@@ -8,15 +8,14 @@ O objetivo principal é promover a transformação digital de um pequeno comérc
 
 ---
 
-## 🎯 Alinhamento com os ODS da ONU
+## Alinhamento com os ODS da ONU
 O projeto está alinhado diretamente com as seguintes metas globais da Agenda 2030:
 *   **ODS 8 (Trabalho Decente e Crescimento Econômico):** Apoio à modernização tecnológica e digitalização de microempresas locais.
 *   **ODS 9 (Indústria, Inovação e Infraestrutura):** Uso de novas tecnologias e desenvolvimento assistido para gerar soluções acessíveis e robustas.
-*   **ODS 10 (Redução das Desigualdades):** Garantia de acesso à tecnologia da informação para pequenos agentes econômicos.
 
 ---
 
-## 🚀 Funcionalidades da Aplicação
+## Funcionalidades da Aplicação
 *   **Landing Page Institucional:** Seções de apresentação, história humanizada do estabelecimento, galeria de fotos/vídeos e depoimentos de clientes.
 *   **Cadastro de Clientes e Pets:** Formulário para registro de tutores e seus animais, contemplando espécie, raça e observações importantes (como alergias e comportamento), com persistência local via `localStorage`.
 *   **Agendamento de Serviços:** Módulo para agendamento de banho, tosa e cuidados estéticos vinculados aos pets cadastrados, com validação de horários e tabela interativa de gerenciamento de status (*Agendamento, Em atendimento, Concluído, Cancelado*).
@@ -24,24 +23,21 @@ O projeto está alinhado diretamente com as seguintes metas globais da Agenda 20
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 *   **Front-end:** HTML5, CSS3 (com variáveis globais customizáveis) e JavaScript puro (Vanilla JS).
-*   **IA de Apoio ao Desenvolvimento:** Ferramentas generativas de interface para prototipagem rápida e estruturação do código.
+*   **IA de Apoio ao Desenvolvimento:** Gemini para auxílio com prompts, e v0.dev para criação dos arquivos.
 *   **Versionamento:** Git e GitHub.
 *   **Deploy / Hospedagem:** Publicado e acessível via **Netlify**.
 
 ---
 
-## 🌐 Links do Projeto
+## Links do Projeto
 *   **Site no Ar (Deploy):** https://tema-integrador.netlify.app
-*   **Repositório GitHub:** [Insira aqui o link do repositório][cite: 4]
+*   **Repositório GitHub:** https://github.com/Projeto-UNIG/tema-integrador
 
 ---
 
-## 👥 Equipe de Desenvolvimento
-*   [Nome do Aluno 1]
-*   [Nome do Aluno 2]
-*   [Nome do Aluno 3]
-*   [Nome do Aluno 4]
-*   [Nome do Aluno 5]
-*   [Nome do Aluno 6]
+## Equipe de Desenvolvimento
+*   Letícia Domingues Carvalho de Araujo
+*   Liryellen Santana Lacerda
+*   Yan Pedro Santos Oliveira
